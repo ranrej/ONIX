@@ -442,5 +442,5 @@ button:hover .highlight-bg::after {
 .social_2 li a:hover
 {
   transform: scale(0.5) translateY(-15px);
-  color: #000000;
+  color: blue;
 }
