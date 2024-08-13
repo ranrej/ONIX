@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="images/logo.png">
+<title>J.J Electrical Services</title>
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<link rel="stylesheet" href= "style_services.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+<section class="showcase_1">
+    <header>
+      <h2 class="logo"><a href="index_1.html"><img src="images/JJ_Electric_black.png"></a></h2>
+      <div class="toggle_1"></div>
+    </header>
+
+    <section class="services">
+        <div class="absolute-wrapper">
+            <div class="colored-backgrounds">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <main>
+            <div class="content">
+              <div class="heading">
+                <div class="wrapper2">
+                    <div class="images2">
+                        <div class="image2">
+                            <p>
+                                <h1>Inspection Services</h1>
+                                Before Beginning Any Contract,
+                                We Make Absolutely Sure That We Are Just Providing With The Services You Requested.
+                                We Are All Fully Registered And Insured,
+                                As Well As Consistent With All Current Regulations.
+                                Troubleshooting And Any Issues.
+                                Only Providing High-Quality And Affordable Service.
+                            </p>
+                        </div>
+
+                        <div class="image2">
+                            <p>
+                                <h1>Instalation Services</h1>
+                                We offer a range of electrical services for condos and homes,
+                                including the installation of the Tesla Wall Charger and NEMA 14/50 EV charger to provide convenient and efficient charging solutions for electric vehicles.
+                                Our expertise also extends to installing new plugs for washers and dryers, 
+                                along with baseboard heaters, digital timers, dimmer switches, slim pot lights, and basement wiring. 
+                                Additionally, we can upgrade your electrical system with a new 600 volts panel and transformers, 
+                                ensuring optimal performance and safety. 
+                                Count on us for all your electrical needs and more.
+                            </p>
+                        </div>
+
+                        <div class="image2">
+                            <p>
+                                <h1>Repair and Replacement</h1>
+                                We provide emergency 24/7 service for electrical needs, 
+                                ensuring prompt assistance whenever it's required. 
+                                Our team specializes in upgrading electrical panels from 60 or 100 amps to a more robust 200 amps,
+                                enhancing the power capacity for homes and condos. 
+                                Additionally, we offer professional fuse-to-breaker upgrades and tackle renovation projects, 
+                                including the removal of outdated knob-and-tube wiring for enhanced safety and functionality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="contact_1.html"class="blue-btn-1"> CONTACT US </a>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="images">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-right" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </div>
+              <div class="left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-left" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <polyline points="15 6 9 12 15 18" />
+                </svg>
+              </div>
+            </div>
+          </main>
+    </section>
+    
+    <ul class="social_1">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index_1.html">Home</a></li>
+      <li><a href="about_2.html">About</a></li>
+      <li><a href="services_1.html">Services</a></li>
+      <li><a href="contact_1.html">Contact</a></li>
+    </ul>
+  </div>
+
+<!-- social icon -->
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Menu Script -->
+<script>
+    const menuToggle = document.querySelector('.toggle_1');
+    const showcase = document.querySelector('.showcase_1');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+</script>
+
+<!-- Services Script -->
+<script>
+    const navLeft = document.querySelector(".left");
+    const navRight = document.querySelector(".right");
+
+    const images = document.querySelector(".images");
+    const images2 = document.querySelector(".images2");
+    const colors = document.querySelector(".colored-backgrounds");
+
+    let index = 0;
+
+    function right() {
+        transform((index = index < 2 ? ++index : 0));
+    }
+
+    function left() {
+        transform((index = index > 0 ? --index : 2));
+    }
+
+    navLeft.addEventListener("click", left);
+    navRight.addEventListener("click", right);
+
+    function transform(index) {
+        images.style.transform = `translateX(-${index * 100}%)`;
+        images2.style.transform = `translateX(-${index * 100}%)`;
+        colors.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+</script>

@@ -1,0 +1,203 @@
+/* Background */
+/* Basic */
+@import url("https://use.typekit.net/ovt6ynt.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+.title {
+  text-align: center;
+  padding: 50px 0px 25px 0;
+  font-size: 44px;
+  font-weight: 600;
+  color: #21222c;
+  font-family: "Playfair Display SC";
+}
+.wrapper {
+  background-color: #f6f8ff;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 90vh;
+  background: transparent;
+  opacity: 1;
+}
+
+.wrapper.pre {
+  background-size: cover !important;
+  background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
+  background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  opacity: 0.75;
+  background: url(https://assets.codepen.io/4927073/mybg.jpg);
+  width: 1400px;
+  height: 1000px;
+}
+
+.wrapper .line {
+  width: 50%;
+  margin: 25px auto 0 auto;
+  height: 1px;
+  background-color: #c3d2e3;
+}
+
+.container {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  padding: 10px 0px;
+  text-align: center;
+  margin: auto;
+}
+
+
+/* Cards */
+section.card {
+  background: #f6f6f6;
+  border-radius: 24px 24px 24px 48px;
+  padding: 48px 48px 48px 308px;
+  margin: 84px 0;
+  width: 60vw;
+  max-width: 920px;
+  min-width: 640px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  position: relative;
+  box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+}
+section.card .text-content h3 {
+  margin: 0;
+  font-size: 1.5em;
+  max-width: 20ch;
+}
+section.card .text-content p {
+  margin: 16px 0 24px;
+  max-width: 36ch;
+}
+section.card .text-content a {
+  border: 3px solid #000;
+  color: #000;
+  align-self: flex-start;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  transition: 400ms all;
+}
+section.card .text-content a:hover {
+  background: #000;
+  color: white;
+}
+section.card .visual {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 1px 2px 6px rgba(255,255,255,0.25), 2px 6px 12px rgba(0,0,0,0.25);
+}
+section.card .visual img {
+  height: 110%;
+}
+section.card:nth-of-type(odd) {
+  margin: 0 0 0 248px;
+  border-radius: 24px 24px 48px 24px;
+  padding: 48px 308px 48px 60px;
+}
+section.card:nth-of-type(odd) .visual {
+  right: 24px;
+  left: auto;
+}
+section.card:nth-of-type(odd) .text-content a {
+  align-self: flex-start;
+}
+article {
+  margin: auto;
+  display: block;
+  width: calc(308vw);
+  max-width: calc(1168px);
+  min-width: calc(888px);
+}
+body {
+  margin: 0;
+  padding: 96px;
+  font-size: 21px;
+  background: #fff;
+  color: #000;
+  font-family: "gelica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media all and (max-width: 1100px) {
+  body {
+    padding: 96px 48px 24px;
+  }
+  article {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  section.card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  section.card .text-content {
+    width: 100%;
+  }
+  section.card:nth-of-type(odd) {
+    margin: 0;
+  }
+}
+@media all and (max-width: 720px) {
+  body {
+    padding: 48px 24px 0;
+  }
+  section.card {
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  section.card:nth-of-type(odd) {
+    padding: 88px 36px 36px;
+    border-radius: 24px;
+  }
+  section.card .text-content h3 {
+    max-width: calc(-50%);
+    font-size: 1em;
+  }
+  section.card .text-content p,
+  section.card .text-content a {
+    font-size: 0.8em;
+  }
+  section.card .visual,
+  section.card:nth-of-type(odd) .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+  }
+  section.card .visual img,
+  section.card:nth-of-type(odd) .visual img {
+    width: 100%;
+    height: auto;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

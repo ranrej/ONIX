@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+<title>J.J Electrical Services</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href= "style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<main class="back">
+    <div class="background"></div>
+    <div class="foreground"></div>
+</main>
+<script>
+    let c = 45;
+
+    function draw(){
+    document.documentElement.style.setProperty('--direction', c++ + 'deg');
+    requestAnimationFrame(draw);
+    }
+
+    requestAnimationFrame(draw);
+
+</script>
+<body>
+    <!-- <video autoplay loop muted plays-inline class="back-video"> -->
+        <!-- <source src="images/elec.mp4" type="video/mp4">
+    </video> -->
+        <header class="header">
+            <a href="index.html"><img src="images/JJ Electric.-1.png"></a>
+            <nav class="navbar">
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="courses.html">SERVICES</a>
+                        <a href="contact.html">CONTACT US</a>
+            </nav>
+            <div class="icon">
+                <i class="fa fa-bars" id="menu-btn"></i>
+            </div>
+        </header>
+        <script>
+            let navbar = document.querySelector('.navbar');
+                document.querySelector('#menu-btn').onclick=()=>{
+                    navbar.classList.toggle('active');
+                }
+        </script>
+
+
+<!----------------Home----------------->
+<section class="home">
+    <div class="max-widt">
+        <div class="home-content">
+            <h4>J.J. Electrical Service Inc.</h4>
+            <h2>Count Your Hertz<br><span>Efficient Reliable Services</span></h2>
+            <a href="contact.html"><button class="btn-1">Contact Us</button></a>
+        </div>
+        <div class="home-image">
+            <img src="images/muslimgirl.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+<!----------Footer--------->
+<section class="footer">
+    
+        <div class="ics">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <p>All Copyrights to <i class="fas fa-copyright"></i> Zyphyr Online</p>
+
+
+</section>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

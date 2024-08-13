@@ -1,0 +1,83 @@
+/* ----------- Content ------------- */
+/* https://codepen.io/georgehastings/pen/xgwxgo */
+html {
+  height: 100%;
+  background: linear-gradient(white, #4e4e4e, white);
+  background-size: .1rem 400%;
+  animation: bg 8s infinite;
+}
+
+body {
+  height: 100%;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  
+  50% {
+    background-position: 0 200%;
+  }
+  
+  100% {
+    background-position: 0 400%;
+  }
+}
+
+
+/* ---------- Background ------------- */
+/* https://codepen.io/dylanbaumann/pen/OzKVKB */
+/* Colors */
+/* Gradient Love */
+.header {
+  /* background: linear-gradient(-38deg, #92f3de, #926dd8); */
+  background: linear-gradient(-38deg, #CD2C5E, #753A88);
+  background-size: 200% 200%;
+  animation: verticalBreathing 15s ease infinite;
+}
+@keyframes verticalBreathing {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 40%;
+  }
+  50% {
+    background-position: 80% 80%;
+  }
+  75% {
+    background-position: 20% 60%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/* ====================== */
+/* Typography & layout stuff */
+p {
+  text-align: center;
+  color: white;
+  font: 400 24px/1 'Julius Sans One';
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+.header {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  max-width: 600px;
+  width: 90%;
+}
+/* Boring Stuff */
+/* html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+} */

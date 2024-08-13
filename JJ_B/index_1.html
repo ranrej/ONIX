@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd"> -->
+
+<html lang="en">
+<link rel="icon" href="images/logo.png">
+<title>J.J Electrical Services</title>
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<link rel="stylesheet" href= "style_index.css">
+
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+        <h2 class="logo"><a href="index_1.html"><img src="images/JJ Electric.-1.png"></a></h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="images/JJ_Home_2.webm" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Electrical Services & Repair</h2> 
+      <!-- <h3>Count Your Hertz</h3> -->
+      <h3>Efficient Reliable Services</h3>
+      <a href="contact_1.html">Contact Us</a>
+    </div>
+
+    <ul class="social_2">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index_1.html">Home</a></li>
+      <li><a href="about_2.html">About</a></li>
+      <li><a href="services_1.html">Services</a></li>
+      <li><a href="contact_1.html">Contact</a></li>
+    </ul>
+  </div>
+
+
+<!-- social icon -->
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Menu Script -->
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+</script>
