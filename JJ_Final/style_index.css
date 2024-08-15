@@ -398,6 +398,11 @@ button:hover .highlight-bg::after {
 {
   list-style: none;
 }
+/* twitter-x */
+.social_1 li i
+{
+  font-size: 55px;
+}
 .social_1 li a
 {
   display: inline-block;
@@ -411,6 +416,7 @@ button:hover .highlight-bg::after {
 {
   transform: scale(0.5) translateY(-15px);
 }
+
 
 /* -------- White --------- */
 .social_2
@@ -429,6 +435,11 @@ button:hover .highlight-bg::after {
 .social_2 li
 {
   list-style: none;
+}
+/* twitter-x */
+.social_2 li i
+{
+  font-size: 55px;
 }
 .social_2 li a
 {

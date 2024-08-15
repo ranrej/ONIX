@@ -446,7 +446,7 @@ button:hover .highlight-bg::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 580px;
+  padding-left: 470px;
 }
 .social_1 ion-icon {
   font-size: 55px;
@@ -454,6 +454,11 @@ button:hover .highlight-bg::after {
 .social_1 li
 {
   list-style: none;
+}
+/* twitter-x */
+.social_1 li i
+{
+  font-size: 55px;
 }
 .social_1 li a
 {
@@ -468,6 +473,7 @@ button:hover .highlight-bg::after {
 {
   transform: scale(0.5) translateY(-15px);
 }
+
 
 /* -------- White --------- */
 .social_2
@@ -486,6 +492,11 @@ button:hover .highlight-bg::after {
 .social_2 li
 {
   list-style: none;
+}
+/* twitter-x */
+.social_2 li i
+{
+  font-size: 55px;
 }
 .social_2 li a
 {

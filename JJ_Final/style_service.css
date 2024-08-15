@@ -470,6 +470,11 @@ header .logo img
 {
   list-style: none;
 }
+/* twitter-x */
+.social_1 li i
+{
+  font-size: 55px;
+}
 .social_1 li a
 {
   display: inline-block;
@@ -482,8 +487,8 @@ header .logo img
 .social_1 li a:hover
 {
   transform: scale(0.5) translateY(-15px);
-  color: yellow;
 }
+
 
 /* -------- White --------- */
 .social_2
@@ -503,6 +508,11 @@ header .logo img
 {
   list-style: none;
 }
+/* twitter-x */
+.social_2 li i
+{
+  font-size: 55px;
+}
 .social_2 li a
 {
   display: inline-block;
@@ -517,3 +527,4 @@ header .logo img
   transform: scale(0.5) translateY(-15px);
   color: blue;
 }
+
