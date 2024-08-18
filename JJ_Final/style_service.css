@@ -26,7 +26,7 @@ header .logo img
 }
 /* ----------------- Menu toggle ----------------- */
 /* white */
-.toggle
+/* .toggle
 {
   position: relative;
   width: 30px;
@@ -44,9 +44,9 @@ header .logo img
   background-size: 25px;
   background-position: center;
   cursor: pointer;
-}
+} */
 /* black */
-.toggle_1
+/* .toggle_1
 {
   position: relative;
   width: 60px;
@@ -66,12 +66,12 @@ header .logo img
   background-size: 25px;
   background-position: center;
   cursor: pointer;
-}
+} */
 
 /* ----------------- Background ----------------- */
 .showcase_1
 {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -154,6 +154,11 @@ header .logo img
   align-items: center;
   justify-content: center;
 }
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .card img {
   object-fit: cover;
   width: 650px;
@@ -168,12 +173,20 @@ header .logo img
   border-radius: 8px;
 }
 
+.overlay1 {
+  position: absolute;
+  top: 0;
+  border-radius: 8px;
+  width: 650px;
+  height: 500px;
+  background: #0000009f; /* Adjust color and opacity as needed */
+  mix-blend-mode: overlay;
+  pointer-events: none; /* Ensures overlay does not interfere with interactions */
+}
+
 .card.two img {
   filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
-/* .card.three img {
-  height: 50vh;
-} */
 .card.four img {
   filter: invert(4%) sepia(75%) saturate(500%) hue-rotate(356deg) brightness(70%) contrast(103%);
 }
@@ -287,13 +300,13 @@ header .logo img
   transition: all 0.3s ease;
 }
 .swiper-button-prev {
-  left: 0px !important;
+  left: 10px !important;
   right: auto !important;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 123, 0, 0.97);
 }
 .swiper-button-next {
-  right: 0px !important;
-  background-color: rgba(255, 255, 255, 0.8);
+  right: 10px !important;
+  background-color: rgba(255, 123, 0, 0.97);
 }
 .swiper-button-prev span,
 .swiper-button-next span {
@@ -304,7 +317,7 @@ header .logo img
   justify-content: center;
   background-color: transparent;
   position: absolute;
-  border: solid 2px #666;
+  border: solid 2px #000000;
   border-left: 0;
   border-bottom: 0;
   transition: all 0.1s ease;
@@ -329,10 +342,10 @@ header .logo img
   content: "";
   position: absolute;
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: all 0.4s ease-in-out;
   z-index: -1;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .swiper-button-prev:after {
   right: 0;
@@ -386,35 +399,39 @@ header .logo img
 .menu
 {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
+  top: 60px;
+  right: 100px;
+  /* width: 900px;
+  height: 100%; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
+  justify-content: right;
+  /* align-items: center; */
+  /* background-color: #f7f7f7; */
+  z-index: 1000;
 }
 .menu ul
 {
-  position: relative;
+  /* position: relative; */
+  list-style: none;
 }
 .menu ul li
 {
-  list-style: none;
+  /* list-style: none; */
+  display: inline-block;
+  margin-right: 50px; /* add spacing between items */
 }
 .menu ul li a
 {
   text-decoration: none;
   font-size: 24px;
-  color: #111;
+  color: #f2f2f2;
 }
 .menu ul li a:hover
 {
   background: #f7f7f7;
   color: transparent;
   background: linear-gradient(-90deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542);
-  animation: rainbow-border 2.0s linear infinite;
+  /* animation: rainbow-border 2.0s linear infinite; */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-size: 200% 200%;
@@ -446,6 +463,229 @@ header .logo img
   .text h3
   {
     font-size: 2em;
+  }
+}
+
+
+/* ---------- Footer --------- */
+/* General Footer Styles */
+.site-footer {
+  background-color: #000;
+  padding: 45px 45px 10px 45px; /* Added padding to all sides */
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373; /* Text color */
+}
+
+/* Footer Image Section */
+.footer-images {
+  display: flex;
+  /*flex-direction: column;*/ /* Stack images vertically */
+  justify-content: space-between; /* Space images evenly */
+  gap: 5px; /* Space between images */
+}
+
+.footer-image {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 450px; /* Adjust max width of images as needed */
+}
+
+/* Adjustments for footer-content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap the content on smaller screens */
+}
+
+/* Footer Section */
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+  /* max-width: 24%;  */
+}
+
+/* Footer About and Quick Links specific adjustments */
+.footer-about {
+  max-width: 40%; /* Adjust width as necessary */
+}
+
+.footer-quick-links {
+  max-width: 20%; /* Adjust width as necessary */
+}
+
+.contact-info {
+  max-width: 20%; /* Adjust width as necessary */
+}
+
+.footer-images {
+  max-width: 20%; /* Adjust width as necessary */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on small screens */
+}
+
+.footer-images {
+    flex-direction: column; /* Stack images vertically on small screens */
+}
+}
+
+/* Contact Info Section */
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 10px; /* Add space from the bottom */
+  letter-spacing: 2px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+.info-item span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #737373;
+}
+
+.info-item a,
+.info-item p {
+  color: #737373;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  color: yellow;
+}
+
+.info-item p {
+  margin: 0;
+}
+
+/* Footer Headings */
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+/* Horizontal Line Style */
+.site-footer hr {
+  border-top-color: #606060;
+  opacity: 0.5;
+  margin: 20px 0;
+}
+
+/* Link Styles */
+.site-footer a {
+  color: #737373;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Footer Links */
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+/* Footer Links Hover Effect */
+.footer-links a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Copyright Text */
+.copyright-text {
+  margin: 0;
+}
+
+/* Social Icons */
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: right;
+  margin-right: 40px; /* move icons from the right */
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons a {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+/* Social Icons Hover Colors */
+.social-icons a.tiktok:hover {
+  background-color: #ed007a;
+}
+.social-icons a.instagram:hover {
+  background-color: #ff0000;
+}
+.social-icons a.whatsapp:hover {
+  background-color: #7db241;
+}
+.social-icons a.facebook:hover {
+  background-color: #2b4377;
+}
+.social-icons a.linkedin:hover {
+  background-color: #0093d7;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+      padding-bottom: 0;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+      text-align: center;
   }
 }
 

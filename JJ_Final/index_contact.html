@@ -2,7 +2,7 @@
 
 <html lang="en">
 <link rel="icon" href="images/JJ_Icon.png">
-<title>ONIX Electrical Corp.</title>
+<title>EZ Voltage</title>
 <meta name="viewport" content="with=device-width,initial-scale=1.0">
 <link rel="stylesheet" href= "style_contact.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+<body>
 
 <!-- Live ChatBot -->
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
@@ -67,9 +69,9 @@ enable-ga="false"
                 <h2>Contact Us</h2>
             </div> -->
 
-            <div class="text">
+            <!-- <div class="text">
                 <h2>Contact Us</h2>
-            </div>
+            </div> -->
 
             <!-- Form -->
             <div class="box">
@@ -104,25 +106,23 @@ enable-ga="false"
                                 </div>
                             </div>
 
-                            <div class="row50">
-                                <!-- Address Input Box -->
+                            <!-- <div class="row50">
                                 <div class="inputBox">
                                     <span>Address</span>
                                     <input id="autocomplete" type="text" placeholder="Address">
                                 </div>
-                                <!-- Postal Code Input Box -->
                                 <div class="inputBox">
                                     <span>Postal Code</span>
                                     <input type="text" placeholder="Postal Code">
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="row50">
+                            <!-- <div class="row50">
                                 <div class="fileBox">
                                     <span>Import Images</span>
                                     <input type="file" name="files" multiple>
                                 </div>
-                            </div>
+                            </div> -->
         
                             <div class="row100">
                                 <!-- Message Input Box -->
@@ -134,9 +134,18 @@ enable-ga="false"
         
                             <div class="row150">
                                 <!-- Submit Button -->
-                                <div class="inputButton">
+                                <!-- <div class="inputButton">
                                     <input type="submit" value="Submit">
-                                </div>
+                                </div> -->
+
+                                <button type="submit" class="mt-3" onclick="location.href='#';">
+                                    <span>
+                                      <span class="highlight-bg"></span>
+                                      <span class="button-text">
+                                        Submit
+                                      </span>
+                                    </span>
+                                  </button>
                             </div>
                         </div>
                     </form>
@@ -163,12 +172,12 @@ enable-ga="false"
                         </div>
 
                         <!-- Social Media Links -->
-                        <ul class="sci">
+                        <!-- <ul class="sci">
                             <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                             <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                             <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
                             <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                        </ul>
+                        </ul> -->
                     </div>
 
                     <!-- Map -->
@@ -185,14 +194,15 @@ enable-ga="false"
     <!-- Logo + Menu toggle -->
     <header>
         <h2 class="logo"><a href="index_1.html"><img src="images/JJ_Logo_white.png"></a></h2>
-    <div class="toggle"></div>
+    <!-- <div class="toggle"></div> -->
     </header>
 
     <!-- Social -->
     <ul class="social_2">
         <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
         <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
     </ul>
 </section>
@@ -276,3 +286,94 @@ enable-ga="false"
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNcvzs-ktlZbdNUHl_VRDbLMi9exUozw8&libraries=places&callback=initAutocomplete" async defer></script>
+
+
+<!----------Footer--------->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-content">
+
+        
+        <!-- About Section -->
+        <div class="footer-section footer-about">
+          <h6>About Us</h6>
+          <p class="text-justify">
+            With over 20 years of experience, we provide certified electrical services for residential and commercial clients. Our expertise is backed by certification from the Electrical Safety Authority, ensuring safety and compliance in all our work.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section footer-quick-links">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index_1.html">Home</a></li>
+            <li><a href="index_about.html">About Us</a></li>
+            <li><a href="index_service.html">Our Services</a></li>
+            <li><a href="index_contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-section contact-info">
+          <h6>Contact Info</h6>
+          <div class="infoBox">
+            <!-- Email -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:sampleemail@email.com">sampleemail@email.com</a>
+            </div>
+            <!-- Phone -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+15555555555">+1 555 555 5555</a>
+            </div>
+            <!-- Address -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-location-pin"></i></span>
+              <p>Scarborough, ON, CA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="footer-section footer-images">
+          <img src="images/certif_1.png" alt="Image 1" class="footer-image">
+          <!-- <img src="images/certif_2.jpg" alt="Image 2" class="footer-image"> -->
+        </div>
+
+
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+    </div>
+    <!-- Footer Bottom Section -->
+    <div class="container">
+      <div class="row">
+        <!-- Copyright Section -->
+        <div class="footer-section copyright-footer">
+          <p class="copyright-text">
+            Copyright &copy; 2024 All Rights Reserved by EZ-Voltage
+          </p>
+        </div>
+
+        
+        <!-- Social Media Section -->
+        <div class="footer-section social-footer">
+          <ul class="social-icons">
+            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
