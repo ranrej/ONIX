@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;1,600&display=swap');
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Libre Franklin", sans-serif; */
   font-family: 'Lato', sans-serif;
 }
 header
@@ -38,8 +40,8 @@ header .logo img
   transition: 0.5s;
   z-index: 1;
 
-  background-color: #000000;
-  background-image: url("images/back4.jpg");
+  background-color: #ffffff;
+  /* background-image: url("images/back4.jpg"); */
   background-size: cover;
   object-fit: cover;
 }
@@ -79,20 +81,22 @@ header .logo img
 
   display: flex;
   flex-direction: column;
+
+  margin-top: 25px;
 }
 
 .text h2
 {
   font-size: 3em;
   font-weight: thick 300px;
-  color: #fff;
+  color: #000000;
   line-height: 1em;
-  font-family: "Lato";
+  font-family: "Libre Franklin", sans-serif;
   text-align: center;
-  letter-spacing: calc(1em / 5);
+  /* letter-spacing: calc(1em / 5); */
 
   word-spacing: 4px;
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0); */
   z-index: 1;
   border: unset;
   outline: unset;
@@ -111,7 +115,7 @@ header .logo img
 
 .text h2:before {
   border-radius: 3px;
-  background: linear-gradient(70deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542);
+  /* background: linear-gradient(70deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542); */
   width: 100%;
   height: 100%;
   background-size: 200% 200%;
@@ -224,10 +228,12 @@ header .logo img
 }
 
 .contact {
-  padding: 40px;
+  padding: 30px;
+  padding-bottom: 20px;
+  padding-top: 0px;
   background: #fff;
-  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  /* box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15); */
+  /* border-radius: 5px; */
 }
 
 .box {
@@ -288,8 +294,9 @@ header .logo img
   border-radius: 2px;
   color: #000000;
   font-weight: 200;
-  border: none;
-  border-bottom: 1px solid #ccc;
+  /* border: none;
+  border-bottom: 1px solid #ccc; */
+  border: 1px solid #b8b8b8;
   padding: 10px;
   margin-bottom: 20px;
   resize: none;
@@ -326,9 +333,9 @@ header .logo img
   margin-bottom: 10px;
   color: #000000;
   font-weight: 200;
-  width: calc(100% - 20px);
-  border: none;
-  border-bottom: 1px solid #ccc;
+  /* border: none;
+  border-bottom: 1px solid #ccc; */
+  border: 2px solid #b8b8b8;
 }
 /* -------- Form: button -------- */
 /* .inputButton {
@@ -346,8 +353,13 @@ header .logo img
 
 /* Gradient Animation Button
 /******************************/
+.row150 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .row150 button {
-  display: inline-block;
   background: #ffffff00;
   color: #000000;
   font-size: 1em;
@@ -360,31 +372,17 @@ header .logo img
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 4px;
   letter-spacing: 2px;
 
   width: 210px;
   height: 42px;
 }
 
-.button {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-}
-.formBox .row150 .button {
-  width: 100%;
-  text-align: center;
-  
-}
-
 button:hover {
 	border: 2px;
 	position: relative;
 	border-radius: 10px;
-	color: #fff;
+	color: #000000;
 	background: #00000000;
 	padding: 10 30px;
 	box-shadow: 0 0 0 1px 0 0 0 1px rgba(255, 255, 255, 0.14);
@@ -441,7 +439,7 @@ button:hover .highlight-bg::after {
 	right: 0;
 	top: 2px;
 	height: 100%;
-	filter: blur(.5rem);
+	/* filter: blur(.5rem); */
 	transition: 0.3s;
   border-radius: 10px;
 }
@@ -487,7 +485,7 @@ button:hover .highlight-bg::after {
   color: #ffffff;
   line-height: 1em;
   text-transform: uppercase;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   padding-bottom: 5%;
   margin-bottom: 5px;
   text-align: center;
@@ -495,13 +493,13 @@ button:hover .highlight-bg::after {
 .info .infoBox div {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: -15px;
 }
 /* info box: icons */
 .info .infoBox div span {
   min-width: 40px;
   height: 40px;
-  color: #38b6ff;
+  color: orange;
   background: #ffffff00;
   display: flex;
   justify-content: center;
@@ -521,7 +519,7 @@ button:hover .highlight-bg::after {
 }
 .info .infoBox div p:hover {
   color: #ffffff;
-  text-shadow: 0 0 10px #38b6ff;
+  text-shadow: 0 0 10px orange;
 }
 .info .infoBox div a {
   font-size: 1.1em;
@@ -538,7 +536,7 @@ button:hover .highlight-bg::after {
 }
 
 /* -------- Contact Social -------- */
-.sci {
+/* .sci {
   margin-top: 40px;
   display: flex;
   z-index: 10;
@@ -561,15 +559,16 @@ button:hover .highlight-bg::after {
 .sci li a:hover {
   transform: scale(0.5) translateY(-15px);
   color: #000000;
-}
+} */
 
 
 /* -------- Map -------- */
 .info .map div {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 0;
+  /* margin-bottom: 10px; */
+  padding-top: 20px;
+  /* padding: 0; */
 }
 .map iframe {
   width: 100%;
@@ -630,44 +629,59 @@ button:hover .highlight-bg::after {
   position: absolute;
   top: 60px;
   right: 100px;
-  /* width: 900px;
-  height: 100%; */
   display: flex;
   justify-content: right;
-  /* align-items: center; */
+  align-items: center;
   z-index: 1000;
-  /* background-color: #f7f7f7; */
 }
 .menu ul
 {
-  /* position: relative; */
+  position: relative;
   list-style: none;
 }
 .menu ul li
 {
-  /* list-style: none; */
+  list-style: none;
   display: inline-block;
-  margin-right: 50px; /* add spacing between items */
-}
-.menu ul li a
-{
-  text-decoration: none;
-  font-size: 24px;
-  /* color: #f8f8f8; */
-  color: #f2f2f2;
+  margin-right: 50px;
 }
 .menu ul li a:hover
 {
-  /* color: rgb(145, 104, 29);  */
 
   background: #ffffff;
   color: transparent;
-  background: linear-gradient(-90deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542);
-  /* animation: rainbow-border 2.0s linear infinite; */
+  background: linear-gradient(90deg, #ff0000, #f9530b, #ff9005);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-size: 200% 200%;
   transition: 0.5s;
+  text-decoration: underline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fbd808;
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  background: linear-gradient(90deg, #ff0000, #f9530b, #ff9005);
 }
 
 @media (max-width: 991px)
@@ -850,16 +864,16 @@ button:hover .highlight-bg::after {
 
 /* Copyright Text */
 .copyright-text {
-  margin: 0;
+  text-align: left;
 }
 
 /* Social Icons */
 .social-icons {
   padding-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   list-style: none;
   text-align: right;
-  margin-right: 40px; /* move icons from the right */
+  margin-left: 4px; /* move icons from the right */
 }
 
 .social-icons li {
@@ -959,6 +973,7 @@ button:hover .highlight-bg::after {
 .social_1 li a:hover
 {
   transform: scale(0.5) translateY(-15px);
+  color: blue;
 }
 
 
