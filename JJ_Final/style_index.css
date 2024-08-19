@@ -32,27 +32,6 @@ header .logo img
 {
   width: 200px;
 }
-/* ----------------- Menu toggle ----------------- */
-/* .toggle
-{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-} */
-
 /* ----------------- Index Content ----------------- */
 .showcase
 {
@@ -93,7 +72,7 @@ header .logo img
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000a8;
+  background: #000000ad;
   mix-blend-mode: overlay;
 }
 
@@ -321,6 +300,10 @@ button:hover .highlight-bg::after {
   align-items: center;
   z-index: 1000;
 }
+.menu li {
+  color: #fff;
+  font-size: 24px;
+}
 .menu ul
 {
   position: relative;
@@ -330,7 +313,7 @@ button:hover .highlight-bg::after {
 {
   list-style: none;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 .menu ul li a:hover
 {
@@ -347,7 +330,7 @@ button:hover .highlight-bg::after {
 
 .menu ul li a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   color: #f2f2f2;
   position: relative;
   display: inline-block;

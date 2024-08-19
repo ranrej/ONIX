@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^about index_about.html [NC]
