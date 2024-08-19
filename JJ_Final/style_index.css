@@ -30,7 +30,7 @@ header
 /* ----------------- Logo ----------------- */
 header .logo img
 {
-  width: 200px;
+  width: 250px;
 }
 /* ----------------- Index Content ----------------- */
 .showcase
@@ -94,56 +94,20 @@ header .logo img
   font-weight: thick 300px;
   color: #fff;
   line-height: 1em;
-  /* text-transform: uppercase; */
   font-family: "Libre Franklin", sans-serif;
   text-align: center;
   letter-spacing: calc(1em / 5);
 
   /* special effects */
   word-spacing: 4px;
-  /* text-transform: uppercase; */
-  background: rgba(0, 0, 0, 0.959);
+  background: rgba(0, 0, 0, 0.803);
   z-index: 1;
   border: unset;
   outline: unset;
   position: relative;
   padding: 0.5em 0.5em;
   border-radius: 3px;
-}
-
-.text h2:before, .text h2:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: 3px;
-}
-
-.text h2:before {
-  /* animation: rainbow-border 2.0s linear infinite; */
-  border-radius: 3px;
-  background: linear-gradient(70deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542);
-  width: 100%;
-  height: 100%;
-  background-size: 200% 200%;
-}
-
-.text h2:after {
-  border-radius: 3px;
-  margin: 3px;
-  background: inherit;
-}
-
-@-webkit-keyframes rainbow-border {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+  box-shadow: 0 0 10px rgba(255, 225, 30, 0.959);
 }
 
 .text h3 {
@@ -355,7 +319,7 @@ button:hover .highlight-bg::after {
 }
 
 
-@media (max-width: 991px)
+/* @media (max-width: 991px)
 {
   .showcase,
   .showcase header
@@ -370,7 +334,7 @@ button:hover .highlight-bg::after {
   {
     font-size: 2em;
   }
-}
+} */
 
 
 /* ---------- Footer --------- */
@@ -412,32 +376,32 @@ button:hover .highlight-bg::after {
 }
 
 /* Footer About and Quick Links specific adjustments */
-.footer-about {
-  max-width: 40%; /* Adjust width as necessary */
-}
+/* .footer-about {
+  max-width: 40%;
+} */
 
-.footer-quick-links {
-  max-width: 20%; /* Adjust width as necessary */
-}
+/* .footer-quick-links {
+  max-width: 20%;
+} */
 
-.contact-info {
-  max-width: 20%; /* Adjust width as necessary */
-}
+/* .contact-info {
+  max-width: 20%;
+} */
 
-.footer-images {
-  max-width: 20%; /* Adjust width as necessary */
-}
+/* .footer-images {
+  max-width: 20%;
+} */
 
 /* Responsive Styles */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .footer-content {
-    flex-direction: column; /* Stack sections vertically on small screens */
+    flex-direction: column;
 }
 
 .footer-images {
-    flex-direction: column; /* Stack images vertically on small screens */
+    flex-direction: column;
 }
-}
+} */
 
 /* Contact Info Section */
 .site-footer h6 {
@@ -578,7 +542,7 @@ button:hover .highlight-bg::after {
 }
 
 /* Responsive Styles */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .site-footer [class^=col-] {
       margin-bottom: 30px;
   }
@@ -593,7 +557,7 @@ button:hover .highlight-bg::after {
   .site-footer .social-icons {
       text-align: center;
   }
-}
+} */
 
 /* ------------- Social ------------- */
 
@@ -671,4 +635,91 @@ button:hover .highlight-bg::after {
 {
   transform: scale(0.5) translateY(-15px);
   color: blue;
+}
+
+
+/* -------------- Mobile ----------------- */
+@media (max-width: 991px) {
+  header {
+    padding: 20px 40px;
+  }
+  
+  .showcase {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 2.5em;
+  }
+  
+  .text h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo img {
+    width: 180px;
+  }
+
+  .menu {
+    top: 120px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .social_1, .social_2 {
+    flex-direction: row;
+    bottom: 10px;
+    padding-left: 0;
+  }
+
+  .footer-about {
+    flex-direction: row; /* Stack vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .footer-info-item {
+    flex-direction: row; /* Stack vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .footer-images {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .text h2 {
+    font-size: 1em;
+  }
+
+  .text h3 {
+    font-size: 0.2em;
+  }
+
+  .text a, button {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
 }
