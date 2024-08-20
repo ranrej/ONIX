@@ -4,16 +4,18 @@
 <link rel="icon" href="images/JJ_Icon.png">
 <title>EZ Voltage.</title>
 <meta name="viewport" content="with=device-width,initial-scale=1.0">
-<link rel="stylesheet" href= "style_service.css">
+<link rel="stylesheet" href= "contact.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
 
-<!-- Services Content -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 <body>
-<!-- Live Chatbot -->
+
+<!-- Live ChatBot -->
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1209.3cx.cloud" party="raniarejdal"></call-us-selector>
  
@@ -55,184 +57,153 @@ enable-ga="false"
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 
 
-
 <section class="showcase_1">
-  <div class="overlay"></div>
-  
-  <!-- Services content -->
-  <div class="introcontainer">
+    <div class="overlay"></div>
 
-    <!-- Slider main container -->
-    <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-
-        <!-- Services Title -->
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card four">
-              <img src="images/service_slide0.jpg"/>
-              <div class="overlay1"></div>
-              <div class="text">
-                </div>
-
-            <div class="title-box">
-              <h1>OUR SERVICES</h1>
-              <p>Scroll to discover our services</p>
-            </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Electrical Repair -->
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card ong">
-              <img src="images/service_slide1.jpeg"/>
-              <div class="overlay1"></div>
-              <div class="text">
-                </div>
-
-            <div class="title-box">
-              <h1>Electrical Repair</h1>
-              <p>
-                At Ez Voltage, we offer 24-hour electrical services to ensure your safety and protect your property. Our team handles emergency repairs, troubleshooting, new wiring, upgrades, and general repairs, including circuit breaker issues, lighting repairs, and surge protection. With certified contractors ready to respond immediately, we deliver reliable solutions for all your electrical needs.
-              </p>
-              <div class="seperator"></div>
-            </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- EV Charging Station -->
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card two">
-              <img src="images/service_slide2.png" alt="" />
-              <div class="overlay1"></div>
+    <!-- Contact Content -->
+    <section class="container">
+    <div class="contact-form">
+        <div class="contactUS">
+            <!-- Title -->
             <div class="text">
-                </div>
-
-            <div class="title-box">
-              <h1>EV Charging Station</h1>
-              <p>
-                Upgrade your home with our expert Residential EV Charging Station Installation. Our certified electricians complete the job in one day, ensuring a hassle-free experience. Services include site assessment, permitting, Level 1 and Level 2 installation, seamless integration with your electrical system, and ongoing maintenance. Enjoy home charging convenience, fuel savings, off-peak electricity rates, increased property value, and a reduced carbon footprint.
-              </p>
-              <div class="seperator"></div>
+                <h2>Contact Us</h2>
             </div>
-          </div>
-          </div>
-        </div>
 
-        <!-- Panel Upgrades & Knob-Tube Wiring -->
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card three">
-              <img src="images/service_slide3.jpg" alt="" />
-              <div class="overlay1"></div>
-              <div class="text">
+            <!-- Form -->
+            <div class="box">
+                <!-- Form -->
+                <div class="contact form">
+                    <h3>Send a Request</h3>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <div class="formBox">
+                            <div class="row50">
+                                <!-- First Name Input Box -->
+                                <div class="inputBox">
+                                    <span>First Name</span>
+                                    <input id="firstname" type="text" placeholder="First Name">
+                                </div>
+                                <!-- Last Name Input Box -->
+                                <div class="inputBox">
+                                    <span>Last Name</span>
+                                    <input id="lastname" type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+        
+                            <div class="row50">
+                                <!-- Email Input Box -->
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input id="email" type="text" placeholder="Email">
+                                </div>
+                                <!-- Mobile Input Box -->
+                                <div class="inputBox">
+                                    <span>Mobile</span>
+                                    <input id="mobile" type="text" placeholder="Phone">
+                                </div>
+                            </div>
+        
+                            <div class="row100">
+                                <!-- Message Input Box -->
+                                <div class="inputBox">
+                                    <span>Message</span>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+        
+                            <div class="row150">
+                                <button type="submit" class="mt-3" onclick="location.href='#';">
+                                    <span>
+                                      <span class="highlight-bg"></span>
+                                      <span class="button-text">
+                                        Submit
+                                      </span>
+                                    </span>
+                                  </button>
+                            </div>
+
+                            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                            <script>
+                                function sendEmail() {
+                                  Email.send({
+                                  Host : "smtp.gmail.com",
+                                  Username : "ez.voltage.electricals@gmail.com",
+                                  Password : "D13D7AFBF072150C8C9504AEE3251C491165",
+                                  To : 'ez.voltage.electricals@gmail.com',
+                                  From : document.getElementById("email").value,
+                                  Subject : "New Request - EZ Voltage" + document.getElementById("firstname").value + " " + document.getElementById("lastname").value,
+                                  Body : "First Name: " + document.getElementById("firstname").value + "<br>" + "Last Name: " + document.getElementById("lastname").value + "<br>" + "Email: " + document.getElementById("email").value + "<br>" + "Mobile: " + document.getElementById("mobile").value + "<br>" + "Message: " + document.getElementById("message").value
+                              }).then(
+                                message => alert(message)
+                              );
+                              }
+                            </script>
+                        </div>
+                    </form>
                 </div>
+        
+                <!-- Info Box -->
+                <div class="contact info">
+                    <h3>Contact Info</h3>
+                    <div class="infoBox">
+                        <!-- Email -->
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="mailto:ez.voltage.electricals@gmail.com">ez.voltage.electricals@gmail.com</a>
+                        </div>
+                        <!-- Phone -->
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:+16479076657">+1 (647) 907-6657</a>
+                        </div>
+                        <!-- Address -->
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>
+                              895 Don Mills Rd.  
+                              Two Morneau Shepell Centre, Suite 900
+                              Toronto ON, M3C 1W3
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.1928309821606!2d-79.3418102238193!3d43.72732087109867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd0bf2dc039f%3A0xa362d405f8a9038d!2sMorneau%20Shepell!5e0!3m2!1sen!2sca!4v1724018349905!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-            <div class="title-box">
-              <h1>Panel Upgrades & Knob-Tube Wiring</h1>
-              <p>
-                At Ez Voltage, we provide expert panel upgrades and knob and tube wiring replacements for safe and efficient power distribution. We handle all panel types, from 100-amp for medium homes to 400-amp for larger properties. Certified by the Electrical Safety Authority (ESA), our work meets safety standards, and you'll receive a certificate upon completion, enhancing your home's value. Choose us for our expertise and commitment to safety.
-              </p>
-              <div class="seperator"></div>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <!-- 4)	Commercial Services -->
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card five">
-              <img src="images/service_slide5.jpg" alt="" />
-              <div class="overlay1"></div>
-              <div class="text">
-                </div>
-    
-            <div class="title-box">
-              <h1>Commercial Services</h1>
-              <p>
-                We provide full electrical services: inspections for safety and code compliance, prompt repairs to reduce downtime, and regular maintenance to extend equipment life. We handle system upgrades, infrared scans for overheating, emergency lighting checks, and load testing to prevent overloads. We also install EV charging stations for commercial properties. Choose us for quick, safety-focused service from certified contractors.
-              </p>
-              <div class="seperator"></div>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination" style="bottom: 100px;"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-arrows">
-      <div class="swiper-button-prev"><span></span></div>
-      <div class="swiper-button-next"><span></span></div>
     </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Swipping Script -->
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      speed: 500,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      centeredSlides: true,
-      paginationClickable: true,
-      watchSlidesProgress: true,
-      loop: true,
-      slidesPerView: 2,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+    <!-- Logo + Menu toggle -->
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="images/JJ_Logo_black.png"></a></h2>
+    </header>
 
-
-
-
-
-
-  <!-- Logo + Menu toggle -->
-  <header>
-    <h2 class="logo"><a href="index.html"><img src="images/JJ_Logo_white.png"></a></h2>
-    <!-- <div class="toggle"></div> -->
-  </header>
-
-  <!-- Social -->
-  <ul class="social_2">
-    <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-  </ul>
+    <!-- Social -->
+    <ul class="social_1">
+        <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
 </section>
-
 
 <!-- Menu -->
 <div class="menu">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li>|</li>
-    <li><a href="index_about.html">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li>|</li>
-    <li><a href="index_service.html">Services</a></li>
+    <li><a href="service.html">Services</a></li>
     <li>|</li>
-    <li><a href="index_contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </div>
-
 
 
 <!-- Social icon -->
@@ -242,16 +213,68 @@ enable-ga="false"
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/858840b412.js" crossorigin="anonymous"></script>
 
+<!-- Contact icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 <!-- Menu Script -->
 <script>
-  const menuToggle = document.querySelector('.toggle');
-  const showcase = document.querySelector('.showcase_1');
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase_1');
 
-  menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      showcase.classList.toggle('active');
-  })
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
 </script>
+
+<!-- Google Maps Auto Complete : https://www.youtube.com/watch?v=c3MjU9E9buQ-->
+<script>
+    let autocomplete;
+
+    function initAutocomplete() {
+        autocomplete = new google.maps.places.Autocomplete(
+            document.getElementById('autocomplete'),
+            {
+                types: ['establishment'],
+                componentRestrictions: {'country': ['CA']},
+                fields: ['place_id', 'geometry', 'name']
+            }
+        );
+        autocomplete.addListener('place_changed', onPlaceChanged);
+    }
+
+    function onPlaceChanged() {
+        var place = autocomplete.getPlace();
+
+        if (!place.geometry) {
+            // User did not select a prediction; reset the input field
+            document.getElementById('autocomplete').placeholder = 'Enter a place';
+        } else {
+            // Display details about the valid place
+            document.getElementById('details').innerHTML = place.name;
+        }
+    }
+
+    // Retrieve predictions programmatically
+    var displaySuggestions = (predictions, status) => {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            predictions.forEach( (prediction) => {
+                console.log(prediction.description);
+            });
+        }
+    };
+
+    var service = new google.maps.places.AutocompleteService();
+
+    service.getQueryPredictions(
+        {input: 'pizza in New York'},
+        displaySuggestions
+    );
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNcvzs-ktlZbdNUHl_VRDbLMi9exUozw8&libraries=places&callback=initAutocomplete" async defer></script>
+
 
 <!----------Footer--------->
   <!-- Site footer -->
@@ -273,9 +296,9 @@ enable-ga="false"
           <h6>Quick Links</h6>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index_about.html">About Us</a></li>
-            <li><a href="index_service.html">Our Services</a></li>
-            <li><a href="index_contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -298,8 +321,8 @@ enable-ga="false"
               <span><i class="fa-solid fa-location-pin"></i></span>
               <p>
                 895 Don Mills Rd.  
-                Two Morneau Shepell Centre, Suite 900
-                <br> Toronto ON, M3C 1W3
+                Two Morneau Shepell Centre, Suite 900,
+                Toronto ON, M3C 1W3
               </p>
             </div>
           </div>
@@ -308,7 +331,6 @@ enable-ga="false"
         <!-- Image Section -->
         <div class="footer-section footer-images">
           <img src="images/certif_1.png" alt="Image 1" class="footer-image">
-          <!-- <img src="images/certif_2.jpg" alt="Image 2" class="footer-image"> -->
         </div>
 
 
@@ -345,3 +367,4 @@ enable-ga="false"
 
 </body>
 </html>
+
