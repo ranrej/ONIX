@@ -443,32 +443,6 @@ button:hover .highlight-bg::after {
 	transition: 0.3s;
   border-radius: 10px;
 }
-/* .inputButton input[type="submit"] {
-  display: inline-block;
-  font-size: 1em;
-  background: #ffffff00;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #000000;
-  letter-spacing: 2px;
-  transition: 0.2s;
-  border-radius: 10px;
-  border: 2px solid #000000;
-}
-.inputButton input[type="submit"]:hover {
-  border: 1px solid #000000;
-  color: rgb(0, 0, 0);
-  background:#38b6ff;
-  background: linear-gradient(-90deg, #ff0000, #f9530b, #ff9005);
-  transition: 1s;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0 5px 35px rgb(56,182,255);
-  
-} */
 
 /* -------- Form: placeholder textbox -------- */
 .inputBox ::placeholder {
@@ -535,33 +509,6 @@ button:hover .highlight-bg::after {
   text-shadow: 0 0 10px #38b6ff; /* Adding glow effect to each letter */
 }
 
-/* -------- Contact Social -------- */
-/* .sci {
-  margin-top: 40px;
-  display: flex;
-  z-index: 10;
-}
-.sci ion-icon {
-  font-size: 55px;
-}
-.sci li {
-  list-style: none;
-  margin-right: 15px;
-}
-.sci li a {
-  display: inline-block;
-  filter: invert(1);
-  transform: scale(0.5);
-  transition: 0.5s;
-  color: #000000;
-  font-size: 2em;
-}
-.sci li a:hover {
-  transform: scale(0.5) translateY(-15px);
-  color: #000000;
-} */
-
-
 /* -------- Map -------- */
 .info .map div {
   display: flex;
@@ -580,7 +527,7 @@ button:hover .highlight-bg::after {
 }
 
 /* -------- Responsive Desgin -------- */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   body {
     background: #38b6ff;
   }
@@ -612,12 +559,12 @@ button:hover .highlight-bg::after {
     min-height: 300px;
     padding: 0;
   }
-  .formBox .row100 .button { /*  ---- */
+  .formBox .row100 .button {
     width: 100%;
     margin-left: 200px;
     justify-content: center;
   }
-}
+} */
 
 
 
@@ -688,23 +635,6 @@ button:hover .highlight-bg::after {
   background: linear-gradient(90deg, #ff0000, #f9530b, #ff9005);
 }
 
-@media (max-width: 991px)
-{
-  .showcase_1,
-  .showcase_1 header
-  {
-    padding: 40px;
-  }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
-    font-size: 2em;
-  }
-}
-
 @-webkit-keyframes rainbow-border {
   0% {
     background-position: 0% 50%;
@@ -756,32 +686,22 @@ button:hover .highlight-bg::after {
 }
 
 /* Footer About and Quick Links specific adjustments */
-.footer-about {
-  max-width: 40%; /* Adjust width as necessary */
+/* .footer-about {
+  max-width: 40%;
 }
 
 .footer-quick-links {
-  max-width: 20%; /* Adjust width as necessary */
+  max-width: 20%;
 }
 
 .contact-info {
-  max-width: 20%; /* Adjust width as necessary */
+  max-width: 20%;
 }
 
 .footer-images {
-  max-width: 20%; /* Adjust width as necessary */
-}
+  max-width: 20%;
+} */
 
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .footer-content {
-    flex-direction: column; /* Stack sections vertically on small screens */
-}
-
-.footer-images {
-    flex-direction: column; /* Stack images vertically on small screens */
-}
-}
 
 /* Contact Info Section */
 .site-footer h6 {
@@ -921,25 +841,6 @@ button:hover .highlight-bg::after {
   background-color: #0093d7;
 }
 
-/* Responsive Styles */
-@media (max-width: 991px) {
-  .site-footer [class^=col-] {
-      margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-footer {
-      padding-bottom: 0;
-  }
-
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
-      text-align: center;
-  }
-}
-
-
 /* ------------- Social ------------- */
 
 /* ------ Black ------ */
@@ -1017,4 +918,163 @@ button:hover .highlight-bg::after {
 {
   transform: scale(0.5) translateY(-15px);
   color: blue;
+}
+
+
+/* -------------- Mobile ----------------- */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  header .logo img {
+    width: 150px;
+  }
+
+  .showcase_1 {
+    padding: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text h2 {
+    font-size: 2em;
+  }
+
+  .text h3 {
+    font-size: 1.5em;
+  }
+
+  .text p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .text a {
+    padding: 8px 20px;
+    font-size: 0.9em;
+  }
+
+  .container {
+    flex-direction: column;
+    font-size: 14px;
+    /* text-align: center; */
+  }
+
+  .contactUS {
+    margin-top: 130px;
+    position: relative;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ensure there's space between form and info */
+  }
+
+  .contact.form,
+  .contact.info {
+    width: 100%;
+    margin-bottom: 20px; /* Add space below each section */
+  }
+
+  .formBox .row50 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .map {
+    min-height: 200px;
+  }
+
+  .site-footer {
+    padding: 20px 20px 10px 20px;
+    font-size: 14px;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .social-icons li {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo img {
+    width: 180px;
+  }
+
+  .menu {
+    top: 100px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .social_1, .social_2 {
+    flex-direction: row;
+    /* bottom: 10px; */
+    padding-left: 0;
+
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    position: relative;
+  }
+
+  .footer-about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-info-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .text h2 {
+    font-size: 2em;
+  }
+
+  .text h3 {
+    font-size: 0.8em;
+  }
+
+  .text a, button {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
 }

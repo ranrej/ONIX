@@ -24,49 +24,6 @@ header .logo img
   width: 250px;
   /* color: #00000000; */
 }
-/* ----------------- Menu toggle ----------------- */
-/* white */
-/* .toggle
-{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-} */
-/* black */
-/* .toggle_1
-{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url("images/menu_1.png");
-
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle_1.active
-{
-  background: url("images/x_1.png");
-
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-} */
 
 /* ----------------- Background ----------------- */
 .showcase_1
@@ -364,6 +321,8 @@ header .logo img
 .swiper-button-disabled.swiper-button-next span {
   opacity: 0.2;
 }
+
+/* Mobile */
 @media screen and (max-width: 512px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -472,23 +431,6 @@ header .logo img
   }
 }
 
-@media (max-width: 991px)
-{
-  .showcase_1,
-  .showcase_1 header
-  {
-    padding: 40px;
-  }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
-    font-size: 2em;
-  }
-}
-
 
 /* ---------- Footer --------- */
 /* General Footer Styles */
@@ -528,33 +470,6 @@ header .logo img
   /* max-width: 24%;  */
 }
 
-/* Footer About and Quick Links specific adjustments */
-.footer-about {
-  max-width: 40%; /* Adjust width as necessary */
-}
-
-.footer-quick-links {
-  max-width: 20%; /* Adjust width as necessary */
-}
-
-.contact-info {
-  max-width: 20%; /* Adjust width as necessary */
-}
-
-.footer-images {
-  max-width: 20%; /* Adjust width as necessary */
-}
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .footer-content {
-    flex-direction: column; /* Stack sections vertically on small screens */
-}
-
-.footer-images {
-    flex-direction: column; /* Stack images vertically on small screens */
-}
-}
 
 /* Contact Info Section */
 .site-footer h6 {
@@ -694,24 +609,6 @@ header .logo img
   background-color: #0093d7;
 }
 
-/* Responsive Styles */
-@media (max-width: 991px) {
-  .site-footer [class^=col-] {
-      margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-footer {
-      padding-bottom: 0;
-  }
-
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
-      text-align: center;
-  }
-}
-
 
 /* ------------- Social ------------- */
 
@@ -791,3 +688,90 @@ header .logo img
   color: blue;
 }
 
+
+
+/* -------------- Mobile ----------------- */
+@media (max-width: 991px) {
+  header {
+    padding: 20px 40px;
+  }
+  
+  .showcase {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 2.5em;
+  }
+  
+  .text h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo img {
+    width: 180px;
+  }
+
+  .menu {
+    top: 120px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .social_1, .social_2 {
+    flex-direction: row;
+    bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .footer-about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-info-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .text h2 {
+    font-size: 1em;
+  }
+
+  .text h3 {
+    font-size: 0.2em;
+  }
+
+  .text a, button {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
+}
