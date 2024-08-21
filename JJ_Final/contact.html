@@ -127,16 +127,22 @@ enable-ga="false"
                             <script>
                                 function sendEmail() {
                                   Email.send({
-                                  Host : "smtp.gmail.com",
-                                  Username : "ez.voltage.electricals@gmail.com",
-                                  Password : "D13D7AFBF072150C8C9504AEE3251C491165",
+                                  SecureToken: "e6b8c787-6c3f-4dff-bc07-04c3adb7beda",
+                                  // Host : "smtp.gmail.com",
+                                  // Username : "ez.voltage.electricals@gmail.com",
+                                  // Password : "D13D7AFBF072150C8C9504AEE3251C491165",
                                   To : 'ez.voltage.electricals@gmail.com',
                                   From : document.getElementById("email").value,
-                                  Subject : "New Request - EZ Voltage" + document.getElementById("firstname").value + " " + document.getElementById("lastname").value,
-                                  Body : "First Name: " + document.getElementById("firstname").value + "<br>" + "Last Name: " + document.getElementById("lastname").value + "<br>" + "Email: " + document.getElementById("email").value + "<br>" + "Mobile: " + document.getElementById("mobile").value + "<br>" + "Message: " + document.getElementById("message").value
-                              }).then(
-                                message => alert(message)
-                              );
+                                  Subject : "New Request - EZ Voltage" + document.getElementById("firstname").value 
+                                            + " " + document.getElementById("lastname").value,
+                                  Body : "First Name: " + document.getElementById("firstname").value + "<br>" 
+                                          + "Last Name: " + document.getElementById("lastname").value + "<br>" 
+                                          + "Email: " + document.getElementById("email").value + "<br>" 
+                                          + "Mobile: " + document.getElementById("mobile").value + "<br>" 
+                                          + "Message: " + document.getElementById("message").value
+                                }).then(
+                                  message => alert("Message successfully sent!")
+                                );
                               }
                             </script>
                         </div>
