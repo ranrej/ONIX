@@ -5,6 +5,7 @@
 <title>EZ Voltage.</title>
 <meta name="viewport" content="with=device-width,initial-scale=1.0">
 <link rel="stylesheet" href= "about.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
 <!-- Aboout content -->
@@ -117,32 +118,37 @@ enable-ga="false"
           </div>
         </div>
       </div>
+      
+      
+
+
+
     </section>
   
   
   
-  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
     <!-- Swipping Script -->
     <script>
       var swiper = new Swiper(".swiper", {
-        effect: "cube",
-        grabCursor: true,
-        loop: true,
-        speed: 1000,
-        cubeEffect: {
-          shadow: false,
-          slideShadows: true,
-          shadowOffset: 10,
-          shadowScale: 0.94,
-        },
-        autoplay: {
-          delay: 2600,
-          pauseOnMouseEnter: true,
-        },
-      });
-  
+    effect: "cards",
+    grabCursor: true,
+    initialSlide: 2,
+    speed: 500,
+    loop: true,
+    rotate: true,
+    mousewheel: {
+    invert: false,
+  },
+});
     </script>
+    
+
+    
+
+
+    
   
   </body>
   
@@ -186,7 +192,7 @@ enable-ga="false"
 <script src="https://kit.fontawesome.com/858840b412.js" crossorigin="anonymous"></script>
 
 <!-- Menu Script -->
-<script>
+<!-- <script>
   const menuToggle = document.querySelector('.toggle');
   const showcase = document.querySelector('.showcase_1');
 
@@ -194,7 +200,7 @@ enable-ga="false"
       menuToggle.classList.toggle('active');
       showcase.classList.toggle('active');
   })
-</script>
+</script> -->
 
 
 <!----------Footer--------->

@@ -13,7 +13,7 @@ header
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,6 @@ header .logo img
   background: #000000c9;
   mix-blend-mode: overlay;
 }
-
 
 /* ----------------- About Content ----------------- */
 section {
@@ -122,37 +121,43 @@ section {
 
 .swiper {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 450px;
+  transform: translate3d(0, 0, 0);
+  border-radius: 20px;
 }
 
 .swiper-slide {
-  position: relative;
+  position: absolute;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   border: 1px solid rgba(255, 255, 255, 0.3);
   user-select: none;
   border-radius: 20px;
-  
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 20px 20px 50px #050505f9;
+
 }
+
 
 /* rectangle behind swiper-slide */
 .swiper-slide::before {
   content: "";
-  position: absolute;
+  position: relative;
   /* centered */
-  top: -3.5px;
-  left: -3.5px;
+   top: -3.5px;
+  left: -3.5px; 
   width: 100%;
   height: 100%;
 
   z-index: -1;
 
-  box-shadow: 20px 20px 50px #7575759b;
+  box-shadow: 20px 20px 50px #222121d5;
   border-radius: 8px;
 }
 
@@ -170,7 +175,7 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 140px;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.815);
   backdrop-filter: blur(5px);
@@ -187,7 +192,7 @@ section {
 }
 
 .overlay p {
-  font-size: clamp(0.8rem, 4vw, 0.9rem);
+  font-size: clamp(0.6rem, 4vw, 0.7rem);
   font-weight: 300;
   line-height: 1.3;
 }
