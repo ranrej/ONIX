@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="icon" href="images/JJ_Icon.png">
+<title>EZ Voltage.</title>
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<link rel="stylesheet" href= "service.css">
+
+<!-- Services Content -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+
+
+<!-- Live ChatBot -->
+<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
+<call-us-selector phonesystem-url="https://1209.3cx.cloud" party="raniarejdal"></call-us-selector>
+ 
+<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+<!--<call-us 
+phonesystem-url="https://1209.3cx.cloud" 
+style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;--call-us-main-accent-color:#D63004;--call-us-main-background-color:#FFFFFF;--call-us-plate-background-color:#D97E18;--call-us-plate-font-color:#E6E6E6;--call-us-main-font-color:#292929;--call-us-agent-bubble-color:#29292910;right: 20px; bottom: 20px;" 
+id="wp-live-chat-by-3CX" 
+minimized="true" 
+animation-style="noanimation" 
+party="raniarejdal" 
+minimized-style="bubbleright" 
+allow-call="false" 
+allow-video="false" 
+allow-soundnotifications="true" 
+enable-mute="true" 
+enable-onmobile="true" 
+offline-enabled="true" 
+enable="true" 
+ignore-queueownership="false" 
+authentication="both" 
+operator-name="EZ Voltage Agent" 
+show-operator-actual-name="true" 
+aknowledge-received="true" 
+operator-icon="data:image/png;base64,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" 
+gdpr-enabled="true" 
+message-userinfo-format="both" 
+message-dateformat="both" 
+start-chat-button-text="Type your message ..." 
+lang="en" 
+button-icon-type="doublebubble" 
+authentication-message="Welcome to EZ Voltage! How can we help you?" 
+greeting-visibility="none" 
+greeting-offline-visibility="none" 
+chat-delay="2000" 
+enable-direct-call="false" 
+enable-ga="false" 
+></call-us>--> 
+<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
+
+
+
+
+<body>
+<section class="showcase_1">
+  <div class="overlay"></div>
+  
+  <!-- Services content -->
+  <div class="introcontainer">
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <!-- Services Title -->
+        <div class="swiper-slide">
+          <div class="cards">
+            <div class="card four">
+              <img src="images/service_slide0.jpg"/>
+              <div class="overlay1"></div>
+              <div class="text">
+                </div>
+
+            <div class="title-box">
+              <h1>OUR SERVICES</h1>
+              <p>Scroll to discover our services</p>
+            </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Electrical Repair -->
+        <div class="swiper-slide">
+          <div class="cards">
+            <div class="card ong">
+              <img src="images/service_slide1.jpeg"/>
+              <div class="overlay1"></div>
+              <div class="text">
+                </div>
+
+            <div class="title-box">
+              <h1>Electrical Repair</h1>
+              <p>
+                At Ez Voltage, we offer 24-hour electrical services to ensure your safety and protect your property. Our team handles emergency repairs, troubleshooting, new wiring, upgrades, and general repairs, including circuit breaker issues, lighting repairs, and surge protection. With certified contractors ready to respond immediately, we deliver reliable solutions for all your electrical needs.
+              </p>
+              <div class="seperator"></div>
+            </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- EV Charging Station -->
+        <div class="swiper-slide">
+          <div class="cards">
+            <div class="card two">
+              <img src="images/service_slide2.png" alt="" />
+              <div class="overlay1"></div>
+            <div class="text">
+                </div>
+
+            <div class="title-box">
+              <h1>EV Charging Station</h1>
+              <p>
+                Upgrade your home with our expert Residential EV Charging Station Installation. Our certified electricians complete the job in one day, ensuring a hassle-free experience. Services include site assessment, permitting, Level 1 and Level 2 installation, seamless integration with your electrical system, and ongoing maintenance. Enjoy home charging convenience, fuel savings, off-peak electricity rates, increased property value, and a reduced carbon footprint.
+              </p>
+              <div class="seperator"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Panel Upgrades & Knob-Tube Wiring -->
+        <div class="swiper-slide">
+          <div class="cards">
+            <div class="card three">
+              <img src="images/service_slide3.jpg" alt="" />
+              <div class="overlay1"></div>
+              <div class="text">
+                </div>
+    
+            <div class="title-box">
+              <h1>Panel Upgrades & Knob-Tube Wiring</h1>
+              <p>
+                At Ez Voltage, we provide expert panel upgrades and knob and tube wiring replacements for safe and efficient power distribution. We handle all panel types, from 100-amp for medium homes to 400-amp for larger properties. Certified by the Electrical Safety Authority (ESA), our work meets safety standards, and you'll receive a certificate upon completion, enhancing your home's value. Choose us for our expertise and commitment to safety.
+              </p>
+              <div class="seperator"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Commercial Services -->
+        <div class="swiper-slide">
+          <div class="cards">
+            <div class="card five">
+              <img src="images/service_slide5.jpg" alt="" />
+              <div class="overlay1"></div>
+              <div class="text">
+                </div>
+    
+            <div class="title-box">
+              <h1>Commercial Services</h1>
+              <p>
+                We provide full electrical services: inspections for safety and code compliance, prompt repairs to reduce downtime, and regular maintenance to extend equipment life. We handle system upgrades, infrared scans for overheating, emergency lighting checks, and load testing to prevent overloads. We also install EV charging stations for commercial properties. Choose us for quick, safety-focused service from certified contractors.
+              </p>
+              <div class="seperator"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination" style="bottom: 100px;"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-arrows">
+      <div class="swiper-button-prev"><span></span></div>
+      <div class="swiper-button-next"><span></span></div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Swipping Script -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      speed: 500,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      centeredSlides: true,
+      paginationClickable: true,
+      watchSlidesProgress: true,
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+
+
+
+
+  <!-- Logo + Menu toggle -->
+  <header>
+    <h2 class="logo"><a href="index.html"><img src="images/JJ_Logo_white.png"></a></h2>
+  </header>
+
+  <!-- Social -->
+  <ul class="social_2">
+    <li><a class="tiktok" href="https://www.tiktok.com/@ez.voltage?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+    <li><a class="instagram" href="https://www.instagram.com/ezvoltage/"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+  </ul>
+</section>
+
+
+<!-- Menu -->
+<div class="menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>|</li>
+    <li><a href="about.html">About</a></li>
+    <li>|</li>
+    <li><a href="service.html">Services</a></li>
+    <li>|</li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+
+<!-- Social icon -->
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<!-- Ion Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/858840b412.js" crossorigin="anonymous"></script>
+
+<!-- Menu Script -->
+<script>
+  const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase_1');
+
+  menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+  })
+</script>
+
+<!----------Footer--------->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-content">
+
+        
+        <!-- About Section -->
+        <div class="footer-section footer-about">
+          <h6>About Us</h6>
+          <p class="text-justify">
+            With over 20 years of experience, we provide certified electrical services for residential and commercial clients. Our expertise is backed by certification from the Electrical Safety Authority, ensuring safety and compliance in all our work.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section footer-quick-links">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-section contact-info">
+          <h6>Contact Info</h6>
+          <div class="infoBox">
+            <!-- Email -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:support@ezvoltage.ca">support@ezvoltage.ca</a>
+            </div>
+            <!-- Phone -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+16479076657">+1 (647) 907-6657</a>
+            </div>
+            <!-- Address -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-location-pin"></i></span>
+              <p>
+                895 Don Mills Rd.  
+                Two Morneau Shepell Centre, Suite 900
+                <br> Toronto ON, M3C 1W3
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="footer-section footer-images">
+          <img src="images/certif_1.png" alt="Image 1" class="footer-image">
+        </div>
+
+
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+    </div>
+    <!-- Footer Bottom Section -->
+    <div class="container">
+      <div class="row">
+        <!-- Copyright Section -->
+        <div class="footer-section copyright-footer">
+          <p class="copyright-text">
+            Copyright &copy; 2024 All Rights Reserved by EZ-Voltage
+          </p>
+        </div>
+
+        
+        <!-- Social Media Section -->
+        <div class="footer-section social-footer">
+          <ul class="social-icons">
+            <li><a class="tiktok" href="https://www.tiktok.com/@ez.voltage?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/ezvoltage/"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

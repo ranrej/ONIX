@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="icon" href="images/JJ_Icon.png">
+<title>EZ Voltage.</title>
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<link rel="stylesheet" href= "contact.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+<!-- Live ChatBot -->
+<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
+<call-us-selector phonesystem-url="https://1209.3cx.cloud" party="raniarejdal"></call-us-selector>
+ 
+<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+<!--<call-us 
+phonesystem-url="https://1209.3cx.cloud" 
+style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;--call-us-main-accent-color:#D63004;--call-us-main-background-color:#FFFFFF;--call-us-plate-background-color:#D97E18;--call-us-plate-font-color:#E6E6E6;--call-us-main-font-color:#292929;--call-us-agent-bubble-color:#29292910;right: 20px; bottom: 20px;" 
+id="wp-live-chat-by-3CX" 
+minimized="true" 
+animation-style="noanimation" 
+party="raniarejdal" 
+minimized-style="bubbleright" 
+allow-call="false" 
+allow-video="false" 
+allow-soundnotifications="true" 
+enable-mute="true" 
+enable-onmobile="true" 
+offline-enabled="true" 
+enable="true" 
+ignore-queueownership="false" 
+authentication="both" 
+operator-name="EZ Voltage Agent" 
+show-operator-actual-name="true" 
+aknowledge-received="true" 
+operator-icon="data:image/png;base64,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" 
+gdpr-enabled="true" 
+message-userinfo-format="both" 
+message-dateformat="both" 
+start-chat-button-text="Type your message ..." 
+lang="en" 
+button-icon-type="doublebubble" 
+authentication-message="Welcome to EZ Voltage! How can we help you?" 
+greeting-visibility="none" 
+greeting-offline-visibility="none" 
+chat-delay="2000" 
+enable-direct-call="false" 
+enable-ga="false" 
+></call-us>--> 
+<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
+
+
+
+<body>
+<section class="showcase_1">
+    <div class="overlay"></div>
+
+    <!-- Contact Content -->
+    <section class="container">
+    <div class="contact-form">
+        <div class="contactUS">
+            <!-- Title -->
+            <div class="text">
+                <h2>Contact Us</h2>
+            </div>
+
+            <!-- Form -->
+            <div class="box">
+                <!-- Form -->
+                <div class="contact form">
+                    <h3>Send a Request</h3>
+                    <form 
+                      action="https://formspree.io/f/xldrpnjo"
+                      method="POST"
+                    >
+
+                    <!-- <onsubmit="sendEmail(); reset(); return false;"> -->
+                        <div class="formBox">
+                            <div class="row50">
+                                <!-- First Name Input Box -->
+                                <div class="inputBox">
+                                    <span>First Name</span>
+                                    <input id="firstname" name="firstname" type="text" placeholder="First Name">
+                                </div>
+                                <!-- Last Name Input Box -->
+                                <div class="inputBox">
+                                    <span>Last Name</span>
+                                    <input id="lastname" name="lastname" type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+        
+                            <div class="row50">
+                                <!-- Email Input Box -->
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input id="email" name="email" type="text" placeholder="Email">
+                                </div>
+                                <!-- Mobile Input Box -->
+                                <div class="inputBox">
+                                    <span>Mobile</span>
+                                    <input id="mobile" name="mobile" type="text" placeholder="Phone">
+                                </div>
+                            </div>
+        
+                            <div class="row100">
+                                <!-- Message Input Box -->
+                                <div class="inputBox">
+                                    <span>Message</span>
+                                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+        
+                            <div class="row150">
+                                <button type="submit" class="mt-3">
+                                <!-- <onclick="location.href='#';"> -->
+                                    <span> 
+                                      <span class="highlight-bg"></span>
+                                      <span class="button-text">
+                                        Submit
+                                      </span>
+                                    </span>
+                                  </button>
+                            </div>
+
+                            <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+                            <script>
+                              //   function sendEmail() {
+                              //     Email.send({
+                              //     SecureToken: "5c69c42c-2d94-44f8-be62-218f1fc1ff08",
+                              //     // Host : "smtp.gmail.com",
+                              //     // Username : "ez.voltage.electricals@gmail.com",
+                              //     // Password : "D7275025BCB6043A33DEBE2AEFCE50080000",
+                              //     To : 'ez.voltage.electricals@gmail.com',
+                              //     From : document.getElementById("email").value,
+                              //     Subject : "New Request - EZ Voltage" + document.getElementById("firstname").value 
+                              //               + " " + document.getElementById("lastname").value,
+                              //     Body : "First Name: " + document.getElementById("firstname").value + "<br>" 
+                              //             + "Last Name: " + document.getElementById("lastname").value + "<br>" 
+                              //             + "Email: " + document.getElementById("email").value + "<br>" 
+                              //             + "Mobile: " + document.getElementById("mobile").value + "<br>" 
+                              //             + "Message: " + document.getElementById("message").value
+                              //   }).then(
+                              //     message => alert("Message successfully sent!")
+                              //   );
+                              // }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+        
+                <!-- Info Box -->
+                <div class="contact info">
+                    <h3>Contact Info</h3>
+                    <div class="infoBox">
+                        <!-- Email -->
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="mailto:support@ezvoltage.ca">support@ezvoltage.ca</a>
+                        </div>
+                        <!-- Phone -->
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:+16479076657">+1 (647) 907-6657</a>
+                        </div>
+                        <!-- Address -->
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>
+                              895 Don Mills Rd.  
+                              Two Morneau Shepell Centre, Suite 900
+                              Toronto ON, M3C 1W3
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.1928309821606!2d-79.3418102238193!3d43.72732087109867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd0bf2dc039f%3A0xa362d405f8a9038d!2sMorneau%20Shepell!5e0!3m2!1sen!2sca!4v1724018349905!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </section>
+
+    <!-- Logo + Menu toggle -->
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="images/JJ_Logo_black.png"></a></h2>
+    </header>
+
+    <!-- Social -->
+    <ul class="social_1">
+      <li><a class="tiktok" href="https://www.tiktok.com/@ez.voltage?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a class="instagram" href="https://www.instagram.com/ezvoltage/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+</section>
+
+<!-- Menu -->
+<div class="menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>|</li>
+    <li><a href="about.html">About</a></li>
+    <li>|</li>
+    <li><a href="service.html">Services</a></li>
+    <li>|</li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+<!-- Social icon -->
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<!-- Ion Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/858840b412.js" crossorigin="anonymous"></script>
+
+<!-- Contact icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Menu Script -->
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase_1');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+</script>
+
+<!-- Google Maps Auto Complete : https://www.youtube.com/watch?v=c3MjU9E9buQ-->
+<script>
+    let autocomplete;
+
+    function initAutocomplete() {
+        autocomplete = new google.maps.places.Autocomplete(
+            document.getElementById('autocomplete'),
+            {
+                types: ['establishment'],
+                componentRestrictions: {'country': ['CA']},
+                fields: ['place_id', 'geometry', 'name']
+            }
+        );
+        autocomplete.addListener('place_changed', onPlaceChanged);
+    }
+
+    function onPlaceChanged() {
+        var place = autocomplete.getPlace();
+
+        if (!place.geometry) {
+            // User did not select a prediction; reset the input field
+            document.getElementById('autocomplete').placeholder = 'Enter a place';
+        } else {
+            // Display details about the valid place
+            document.getElementById('details').innerHTML = place.name;
+        }
+    }
+
+    // Retrieve predictions programmatically
+    var displaySuggestions = (predictions, status) => {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            predictions.forEach( (prediction) => {
+                console.log(prediction.description);
+            });
+        }
+    };
+
+    var service = new google.maps.places.AutocompleteService();
+
+    service.getQueryPredictions(
+        {input: 'pizza in New York'},
+        displaySuggestions
+    );
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNcvzs-ktlZbdNUHl_VRDbLMi9exUozw8&libraries=places&callback=initAutocomplete" async defer></script>
+
+
+<!----------Footer--------->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-content">
+
+        
+        <!-- About Section -->
+        <div class="footer-section footer-about">
+          <h6>About Us</h6>
+          <p class="text-justify">
+            With over 20 years of experience, we provide certified electrical services for residential and commercial clients. Our expertise is backed by certification from the Electrical Safety Authority, ensuring safety and compliance in all our work.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section footer-quick-links">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-section contact-info">
+          <h6>Contact Info</h6>
+          <div class="infoBox">
+            <!-- Email -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:support@ezvoltage.ca">support@ezvoltage.ca</a>
+            </div>
+            <!-- Phone -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+16479076657">+1 (647) 907-6657</a>
+            </div>
+            <!-- Address -->
+            <div class="info-item">
+              <span><i class="fa-solid fa-location-pin"></i></span>
+              <p>
+                895 Don Mills Rd.  
+                Two Morneau Shepell Centre, Suite 900,
+                Toronto ON, M3C 1W3
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="footer-section footer-images">
+          <img src="images/certif_1.png" alt="Image 1" class="footer-image">
+        </div>
+
+
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+    </div>
+    <!-- Footer Bottom Section -->
+    <div class="container">
+      <div class="row">
+        <!-- Copyright Section -->
+        <div class="footer-section copyright-footer">
+          <p class="copyright-text">
+            Copyright &copy; 2024 All Rights Reserved by EZ-Voltage
+          </p>
+        </div>
+
+        
+        <!-- Social Media Section -->
+        <div class="footer-section social-footer">
+          <ul class="social-icons">
+            <li><a class="tiktok" href="https://www.tiktok.com/@ez.voltage?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/ezvoltage/"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
+

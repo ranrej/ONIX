@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;1,600&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  will-change: auto;
+  scroll-behavior: smooth;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ----------------- Logo ----------------- */
+header .logo img
+{
+  width: 250px;
+}
+/* ----------------- Index Content ----------------- */
+.showcase
+{
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #21000f;
+  transition: 0.5s;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+/* ------------- Video ------------- */
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000ad;
+  mix-blend-mode: overlay;
+}
+
+/* ------------- Title ------------- */
+.text
+{
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text h2
+{
+  font-size: 3em;
+  font-weight: thick 300px;
+  color: #fff;
+  line-height: 1em;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  letter-spacing: calc(1em / 5);
+
+  /* special effects */
+  word-spacing: 4px;
+  background: rgba(0, 0, 0, 0.803);
+  z-index: 1;
+  border: unset;
+  outline: unset;
+  position: relative;
+  padding: 0.5em 0.5em;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(255, 225, 30, 0.959);
+}
+
+.text h3 {
+  font-size: 1.5em;
+  font-weight: 1;
+  color: #fff;
+  line-height: 1em;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  letter-spacing: calc(1em / 5);
+}
+
+/* ------------- Register Button ------------- */
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #ffffff00;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  font-family: "Libre Franklin", sans-serif;
+  margin-top: 4px;
+}
+
+.text a:hover
+{
+  background: #000;
+  color: transparent;
+  background: linear-gradient(-90deg, #ff0000, #f9530b, #ff9005, #fbd808, #fdf542);
+  animation: rainbow-border 2.0s linear infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  border: 2px solid #000000;
+  transition: 0.5s;
+}
+
+/* Gradient Animation Button
+/******************************/
+
+button {
+  display: inline-block;
+  background: #ffffff00;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 0.2s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 4px;
+  letter-spacing: 2px;
+}
+
+button:hover {
+	border: 2px;
+	position: relative;
+	border-radius: 10px;
+	color: #ffffff;
+	background: #00000000;
+	padding: 10 30px;
+	box-shadow: 0 0 0 1px 0 0 0 1px rgba(255, 255, 255, 0.14);
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition-duration: .15s;
+	transition-timing-function: ease;
+	font-size: 1em;
+
+  width: 210px;
+  height: 42px;
+
+	transition: 0.3s;
+}
+
+button:hover .highlight-bg {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	background: inherit;
+	border-radius: 10px;
+	background: linear-gradient(-90deg, #ff0000, #f9530b, #ff9005);
+	background-size: 400% 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+  transition: 0.3s;
+} 
+
+button:hover .button-text {
+  font-family: "Libre Franklin", sans-serif;
+  text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  transition: 0.3s;
+}
+
+button:hover .highlight-bg::after {
+	content: "";
+	position: absolute;
+	background-size: inherit;
+	background-image: inherit;
+	animation: inherit;
+	left: 0;
+	right: 0;
+	top: 2px;
+	height: 100%;
+	filter: blur(.5rem);
+	transition: 0.3s;
+  border-radius: 10px;
+}
+
+@keyframes background-anim {
+	50% {
+		background-position: 140% 50%;
+		transform: skew(-2deg);
+	}
+}
+
+/* ------------- Menu ------------- */
+.menu
+{
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: 1000;
+}
+.menu li {
+  color: #fff;
+  font-size: 24px;
+}
+.menu ul
+{
+  position: relative;
+  list-style: none;
+}
+.menu ul li
+{
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.menu ul li a:hover
+{
+
+  background: #ffffff;
+  color: transparent;
+  background: linear-gradient(90deg, #ff0000, #f9530b, #ff9005);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  position: relative;
+  display: inline-block;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fbd808;
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  background: linear-gradient(90deg, #ff0000, #f9530b, #ff9005);
+}
+
+/* ---------- Footer --------- */
+/* General Footer Styles */
+.site-footer {
+  background-color: #000;
+  padding: 45px 45px 10px 45px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+/* Footer Image Section */
+.footer-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+/* Adjustments for footer-content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Footer Section */
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+
+/* Contact Info Section */
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+.info-item span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #737373;
+}
+
+.info-item a,
+.info-item p {
+  color: #737373;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  color: yellow;
+}
+
+.info-item p {
+  margin: 0;
+}
+
+/* Footer Headings */
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+/* Horizontal Line Style */
+.site-footer hr {
+  border-top-color: #606060;
+  opacity: 0.5;
+  margin: 20px 0;
+}
+
+/* Link Styles */
+.site-footer a {
+  color: #737373;
+  text-decoration: none;
+}
+
+/* Footer Links */
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+/* Footer Links Hover Effect */
+.footer-links a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Copyright Text */
+.copyright-text {
+  margin: 0;
+}
+
+/* Social Icons */
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: right;
+  margin-right: 40px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons a {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+/* Social Icons Hover Colors */
+.social-icons a.tiktok:hover {
+  background-color: #ed007a;
+}
+.social-icons a.instagram:hover {
+  background-color: #ff0000;
+}
+.social-icons a.whatsapp:hover {
+  background-color: #7db241;
+}
+.social-icons a.facebook:hover {
+  background-color: #2b4377;
+}
+.social-icons a.linkedin:hover {
+  background-color: #0093d7;
+}
+
+/* ------------- Social ------------- */
+
+/* ------ Black ------ */
+.social_1
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 500px;
+}
+.social_1 ion-icon {
+  font-size: 55px;
+}
+.social_1 li
+{
+  list-style: none;
+}
+/* twitter-x */
+.social_1 li i
+{
+  font-size: 55px;
+}
+.social_1 li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+  color: #ffffff;
+}
+.social_1 li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
+
+/* -------- White --------- */
+.social_2
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.social_2 ion-icon {
+  font-size: 55px;
+}
+.social_2 li
+{
+  list-style: none;
+}
+/* twitter-x */
+.social_2 li i
+{
+  font-size: 55px;
+}
+.social_2 li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+  color: #000000;
+}
+.social_2 li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+  color: blue;
+}
+
+
+/* -------------- Mobile ----------------- */
+@media (max-width: 991px) {
+  header {
+    padding: 20px 40px;
+  }
+  
+  .showcase {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 2.5em;
+  }
+  
+  .text h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo img {
+    width: 180px;
+  }
+
+  .menu {
+    top: 120px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .social_1, .social_2 {
+    flex-direction: row;
+    bottom: 10px;
+    padding-left: 0;
+  }
+
+  .footer-about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-info-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .text h2 {
+    font-size: 1em;
+  }
+
+  .text h3 {
+    font-size: 0.2em;
+  }
+
+  .text a, button {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
+}
