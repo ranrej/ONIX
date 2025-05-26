@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/JJ_Icon.png">
     <title>EZ VOLTAGE ELECTRICALS</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/858840b412.js" crossorigin="anonymous"></script>
@@ -12,23 +13,72 @@
     <div id="header">
         <div class="container">
             <nav>
-                 <img src="images/JJ_Icon_white.png" alt="JJ Icon" class="logo">
-                <ul>
+                 <img src="images/JJ_Logo_white.png" alt="JJ Icon" class="logo">
+                <ul id="sidemenu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#certification">Certification</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
+
+        <!-- Mouse Scroll -->
+        <!-- <div class="mouse"></div> -->
+        
+        <!---------------------- home ------------->  
+        <section class="home">
+            <div class="users-color-container">
+                <span class="item" style="--i: 1"></span>
+                <img
+                class="item"
+                src="images/service_slide2.png"
+                style="--i: 2"
+                alt="" />
+                <span class="item" style="--i: 3"></span>
+                <img
+                class="item"
+                src="images/lights.jpeg"
+                style="--i: 4"
+                alt="" />
+
+                <img
+                class="item"
+                src="images/about.jpeg"
+                style="--i: 10"
+                alt="" />
+                <span class="item" style="--i: 11"></span>
+                <img class="item" src="images/service_slide1.jpeg" style="--i: 12" alt="" />
+                <span class="item" style="--i: 5"></span>
+
+                <span class="item" style="--i: 9"></span>
+                <img class="item" src="images/service1.jpeg" style="--i: 8" alt="" />
+                <span class="item" style="--i: 7"></span>
+                <img class="item" src="images/service0.jpeg" style="--i: 6" alt="" />
+            </div>
+
+            <!---------------------- title ------------->
+            <div class="title">
+                <h1>EZ Voltage Electricals</h1>
+                <p>Powering Your World with Excellence</p>
+                <a href="#about" class="btn btn3">Learn More</a>
+            </div>
+        </section>
+
+      
     </div>
+        <br>
+        <br>
+        <br>
  <!---------------------- about------------->   
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/service_slide2.png">
+                    <img src="images/about1.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Us</h1>
@@ -87,6 +137,9 @@ deliver exceptional electrical solutions with unmatched
             </div>
         </div>
     </div>
+    <br>
+        <br>
+        <br>
  <!---------------------- services------------->   
  <div id="services">
     <div class="container">
@@ -106,7 +159,7 @@ deliver exceptional electrical solutions with unmatched
                         we deliver reliable solutions for all your 
                         electrical needs.
                     </p>
-                <a href="#" >Learn More</a>
+                <a href="https://esasafe.com/safety/" >Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-plug-circle-plus"></i>
@@ -122,7 +175,7 @@ deliver exceptional electrical solutions with unmatched
                     Choose us for our expertise and commitment to safety.
 
                 </p>
-                <a href="#" >Learn More</a>
+                <a href="https://esasafe.com/home-renovation-buying-and-selling/knob-and-tube/" >Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-charging-station"></i>
@@ -138,7 +191,7 @@ deliver exceptional electrical solutions with unmatched
                      off-peak electricity rates, increased property value, 
                      and a reduced carbon footprint.
                 </p>
-                <a href="#" >Learn More</a>
+                <a href="https://esasafe.com/home-renovation-buying-and-selling/ev-charging-systems/" >Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-shop"></i>
@@ -154,7 +207,7 @@ deliver exceptional electrical solutions with unmatched
                      commercial properties. Choose us for quick, 
                      safety-focused service from certified contractors.
                 </p>
-                <a href="#" >Learn More</a>
+                <a href="https://www.youtube.com/watch?v=KpnldNmxClY&ab_channel=GEORGEG" >Learn More</a>
             </div>
         </div>
     </div>
@@ -187,6 +240,64 @@ deliver exceptional electrical solutions with unmatched
         </div>
     </div>
     </div>
+
+    <br>
+        <br>
+        <br>
+
+    <!---------------------- Sponsors/Parners------------->
+    <div id="sponsors">
+        <div class="container">
+            <h1 class="sub-title">Our Brands</h1>
+            <div class="sponsors-list">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="images/dewalt-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/3m-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/stanley-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/cisco-logo.png" height="100" width="250" alt="" />
+                            </div>
+                        <div class="slide">
+                            <img src="images/schneider-electric-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/ge-lighting-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/milwaukee-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/hammond-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/lithonia-lighting-logo.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/esa-logo.png" height="100" width="250" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+
     <!---------------------- contact------------->
     <div id="contact">
         <div class="container">
@@ -197,23 +308,24 @@ deliver exceptional electrical solutions with unmatched
                     <p><i class="fa-solid fa-phone"></i> Phone:+1(647) 907-6657</p>
                     <p><i class="fa-solid fa-location-dot"></i> Address: 895 Don Mills Rd. Two Morneau Shepell Centre, Suite 900 Toronto ON, M3C 1W3</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ezvoltage/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <a href="images/Business-Portfolio.pdf" class="btn btn2">Download Business Profolio</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="phone" placeholder="Your Phone Number" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
                         <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                        
                 </div>
                 <div class="copyright">
-                    <p>&copy; Copyright © EZ Voltage Electricals. All rights reserved Corp.</p>
+                    <p>Copyright &copy; 2024 All Rights Reserved to EZ Voltage Electricals</p>
     </div>
 
 <script>
@@ -230,5 +342,31 @@ deliver exceptional electrical solutions with unmatched
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzPErHCeI-N3r08gq9FrNUEcB6UnOSi9krF-Ly7aUBnwa5s2pvIgYJuDXqp0_6hg5Lf/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then (response => {
+        form.reset(); // Clear the form fields
+        // Redirect to confirmation.html on success
+        window.location.href = 'confirmation.html';
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
 </body>
 </html>
