@@ -183,7 +183,7 @@ nav ul li a::after{
 }
 .training-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
     padding: 0 10%;
@@ -192,7 +192,7 @@ nav ul li a::after{
 
 .training-card-container {
     width: 100%;
-    height: 500px;
+    height: 570px;
     position: relative;
     cursor: pointer;
 }
@@ -206,33 +206,24 @@ nav ul li a::after{
     transform-style: preserve-3d;
 }
 
-.training-card-container.flipped .training-card {
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     background: #1f1f1f;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: background 0.5s;
+    overflow: hidden;
 }
 
 .card-front:hover {
     background: #ffb700a3;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-    background: #2a2a2a;
-    overflow-y: auto;
 }
 
 .card-front i {
@@ -241,50 +232,18 @@ nav ul li a::after{
     margin-bottom: 20px;
 }
 
-.card-front h2, .card-back h3 {
+.card-front h2 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
     color: #ffffff;
 }
 
-.card-front p, .card-back p {
+.card-front p {
     color: #fbf7f7;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 10px;
-}
-
-.card-back h4 {
-    color: #ffb700;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 15px 0 8px 0;
-    border-bottom: 1px solid #ffb700;
-    padding-bottom: 5px;
-}
-
-.card-back h5 {
-    color: #ffb700;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 12px 0 5px 0;
-}
-
-.flip-indicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: auto;
-    padding-top: 20px;
-    color: #ffb700;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.card-back .flip-indicator {
-    padding-bottom: 30px;
 }
 
 .flip-indicator i {
@@ -360,6 +319,28 @@ nav ul li a::after{
     background: #ffb700;
     color: #101010;
     transform: translateY(-2px);
+}
+
+.enrollment-section {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 10%;
+    border-left: 4px solid #ffb700;
+}
+
+.enrollment-section h3 {
+    color: #ffb700;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.enrollment-section p {
+    color: #fbf7f7;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /*----------------------Certification-----------------*/
@@ -1128,13 +1109,13 @@ nav .fa-solid{
         padding: 0 5%;
     }
     .training-card-container {
-        height: 450px;
+        height: 520px;
     }
-    .card-front, .card-back {
+    .card-front {
         padding: 20px;
         font-size: 12px;
     }
-    .card-front h2, .card-back h3 {
+    .card-front h2 {
         font-size: 18px;
         margin-bottom: 10px;
     }
@@ -1151,9 +1132,6 @@ nav .fa-solid{
         margin-top: 10px;
         padding-top: 10px;
         font-size: 12px;
-    }
-    .card-back .flip-indicator {
-        padding-bottom: 30px;
     }
     .bio {
         flex-direction: column;
@@ -1174,6 +1152,16 @@ nav .fa-solid{
     }
     .bio-right p {
         font-size: 14px;
+    }
+    .enrollment-section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    .enrollment-section h3 {
+        font-size: 18px;
+    }
+    .enrollment-section p {
+        font-size: 13px;
     }
     .certification-list{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
